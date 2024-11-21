@@ -1,0 +1,190 @@
+.align-c-c {
+    align-content: center;
+}
+
+.align-i-c {
+    align-items: center;
+}
+
+.border-test{
+    border: 1px solid white;
+}
+
+.bg-top {
+    background-color: rgb(22, 22, 22);
+}
+.bg-light{
+    background-color: rgb(50, 50, 50);
+    color:rgb(196, 196, 196);
+}
+
+.bg-trans {
+    background-color: transparent;
+}
+.bg-w{
+    background-color: whitesmoke;
+}
+
+.b-t {
+    border: 3px solid red;
+    background-color: blue;
+}
+.col-g{
+    color: rgb(165, 165, 165);
+}
+
+.dark {
+    background-color: rgb(7, 7, 7);
+    color: whitesmoke;
+}
+
+.flex-box {
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.font-b{
+    font-weight: bold   ;
+}
+.font-s{
+    font-size: small;
+}
+.font-l{
+    font-size: large;
+}
+.font-l-l{
+    font-size: larger;
+}
+.font-thin{
+    font-weight: lighter;
+}
+
+.gap {
+    gap: 15px;
+}
+.gap-10 {
+    gap: 5px;
+}
+
+.grid-view {
+    display: grid;
+}
+.hidden{
+    display: none;
+}
+.hover:hover{
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
+.hover-bg:hover{
+    background-color: #202020;
+
+}
+
+.inline-blk {
+    display: inline-block;
+}
+
+.justify-c {
+    justify-content: center;
+}
+.justify-s-a{
+    justify-content: space-around;
+}
+.justify-s-b{
+    justify-content: space-between;
+}
+.light{
+    background-color: whitesmoke;
+    color: rgb(7, 7, 7);
+}
+
+.m-5 {
+    margin: 5px;
+}
+.m-10 {
+    margin: 10px;
+}
+.m-20{
+    margin: 20px;
+}
+.nav-h{
+    max-height: 1.6rem;
+}
+.overflow-h{
+    overflow: hidden;
+}
+.overflow-a{
+    overflow: auto;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.p-10 {
+    padding: 10px;
+}
+.p-5{
+    padding: 5px 10px;
+}
+.p-2{
+    padding: 2px;
+}
+
+
+.rounded {
+    border-radius: 3rem;
+}
+.rounded-5 {
+    border-radius: 1rem;
+}
+.rounded-2{
+    border-radius: 0.5rem;
+}
+
+.svg-g {
+    fill: rgb(165, 165, 165);
+}
+
+.svg-w {
+    fill: white;
+}
+
+.text-flow{
+    text-overflow: ellipsis;
+}
+
+
+
+ /* CONTENT ADDED WITH HELP OF CHATGPT */
+
+ /* Scrollbar Container */
+ .scrl::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 10px; /* Height for horizontal scrollbar */
+}
+
+/* Scrollbar Track */
+.scrl::-webkit-scrollbar-track {
+    background: #333; /* Color of the track */
+    border-radius: 10px; /* Optional: Round the corners */
+}
+
+/* Scrollbar Thumb */
+.scrl::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Optional: Round the corners */
+}
+
+/* Scrollbar Thumb Hover */
+.scrl::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color when hovered */
+}
+
+/* Optional: Customize Scrollbar Corner */
+.scrl::-webkit-scrollbar-corner {
+    background-color: #8d1717; /* Color of the corner where two scrollbars meet */
+}

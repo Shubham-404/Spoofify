@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoofify</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utility.css">
+</head>
+
+<body class="dark">
+    <div class="container grid-view">
+        <nav class="flex-box align-i-c gap">
+            <div class="logo flex-box align-i-c m-10">
+                <img class="m-5" src="assets/Spotify.svg" alt="logo">
+            </div>
+            <div class="search flex-box align-i-c justify-c gap">
+                <img class="home-btn p-5 bg-top rounded hover-bg" src="assets/home.svg" alt="home">
+                <div class="search-bar nav-h p-10 bg-top flex-box align-i-c gap rounded hover-bg">
+                    <img class="img" src="assets/search.svg" alt="search">
+                    <input class="bg-trans font-s" type="text" placeholder="What do you want to play?">
+                    <div class="divider col-g">
+                        <h2 class="font-l-l font-thin">|</h2>
+                    </div>
+                    <img class="img" src="assets/browse.svg" alt="browse">
+                </div>
+
+            </div>
+            <div class="account m-10 flex-box align-i-c gap">
+                <img class="img notifs" src="assets/notification.svg" alt="notify">
+
+                <img class="rounded pointer hover-bg p-10 bg-top" width="35" height="35" src="assets/mypic.jpg"
+                    alt="profile">
+
+            </div>
+
+        </nav>
+        <div class="sub-container flex-box align-i-c justify-c">
+
+            <section class="left bg-top rounded-5 m-5">
+
+                <div class="library m-20 flex-box align-i-c justify-s-b">
+                    <div class="topic1 flex-box gap align-i-c justify-c">
+                        <img class="img" src="assets/library.svg" alt="library">
+                        <h4 class=" col-g hover">Your Library</h4>
+                    </div>
+                    <img class="img cross hidden" src="assets/plus.svg" alt="close">
+
+
+                </div>
+                <div class="filter overflow-a m-10 p-10 flex-box align-i-c scrl">
+                    <h5 class="p-5 bg-light m-5 rounded-5 hover hover-bg light">Songs</h5>
+                    <h5 class="p-5 bg-light m-5 rounded-5 hover hover-bg">Artists</h5>
+                    <h5 class="p-5 bg-light m-5 rounded-5 hover hover-bg">Albums</h5>
+                    <h5 class="p-5 bg-light m-5 rounded-5 hover hover-bg">Podcasts&nbsp;&&nbsp;Shows</h5>
+
+                </div>
+                <div class="section-search m-10 flex-box align-i-c justify-s-b">
+                    <img class="img" src="assets/search.svg" alt="">
+                    <div class="recent flex-box align-i-c justify-s-b gap">
+                        <h5>Recents</h5>
+                        <img class="img" src="assets/list.svg" alt="list">
+                    </div>
+                </div>
+                <div class="song-list p-5 rounded-2 overflow-a bg-trans scrl gap">
+                    <!-- to be added by javascript -->
+                </div>
+
+            </section>
+
+            <section class="right bg-top rounded-5 m-5 overflow-a">
+                <main>
+                    <div class="filter overflow-a m-10 p-10 flex-box gap-10 align-i-c scrl">
+                        <img id="lib-ham" class="p-10 m-5 hidden bg-top rounded-5 hover hover-bg"
+                            src="assets/library.svg" alt="lib">
+                        <h5 class="p-5 bg-top m-5 rounded-5 hover hover-bg light">All</h5>
+                        <h5 class="p-5 bg-top m-5 rounded-5 pointer hover-bg">Music</h5>
+                        <h5 class="p-5 bg-top m-5 rounded-5 pointer hover-bg">Podcasts&nbsp;&&nbsp;Shows</h5>
+                    </div>
+                    <div class="recommendation m-10 p-10 flex-box flex-wrap align-i-c overflow-a gap">
+                        <div class="song flex-box align-i-c overflow-h">
+                            <img height="50" width="50" src="assets/tumse.jpeg" alt="album">
+                            <h6 class="song-name p-5 font-s">Tum Se (From "Teri Baaton Mein Aisa...</h6>
+                            <div id="song-play" class="play-pause animate-fast m-5 bg-w rounded flex-box align-i-c">
+                                <img id="pause-new" class="dyn-play-btn hidden" src="assets/pause.svg" alt="pause">
+                                <img id="play-new" class="dyn-play-btn" src="assets/play.svg" alt="play">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="playlists">
+
+                    </div>
+
+                </main>
+                <footer>
+                    <div class="footer-up">
+
+                    </div>
+                    <div class="footer-down">
+
+                    </div>
+                </footer>
+            </section>
+            <section class="song-tab bg-top rounded-5 m-5 overflow-a">
+                <!-- to be added later -->
+            </section>
+        </div>
+        <div class="player flex-box gap justify-s-b align-i-c p-10">
+            <div class="left-part flex-box align-i-c gap">
+                <img class="curr-img" height="35" src="assets/error.svg" alt="song">
+                <div class="song-info w-80">
+                    <h6 class="song-name font-s">Tap to Play!</h6>
+                    <h6 class="composer col-g">It's You</h6>
+                </div>
+            </div>
+            <div class="mid-part grid-view align-i-c p-5">
+                <div class="controler flex-box align-i-c justify-c gap">
+                    <img id="shuffle" class="hide-mob " src="assets/shuffle.svg" alt="shuffle">
+                    <img id="unshuffle" class="hidden hide-mob " src="assets/shuffle-white.svg" alt="shuffle">
+                    <img class="img previous hide-mob" src="assets/previous.svg" alt="previous">
+                    <div class="play-pause bg-w rounded flex-box align-i-c">
+                        <img id="pause" class="hidden" src="assets/pause.svg" alt="pause">
+                        <img id="play" src="assets/play.svg" alt="play">
+                    </div>
+                    <img class="img next hide-mob" src="assets/next.svg" alt="next">
+                    <img id="repeat" class="hide-mob" src="assets/repeat.svg" alt="repeat">
+                    <img id="unrepeat" class="hide-mob hidden" src="assets/repeat-white.svg" alt="repeat">
+                </div>
+
+                <div class="mid-bottom flex-box align-i-c">
+                    <span id="start-time" class="font-s hide-mob  flex-box justify-c align-i-c">--:--</span>
+                    <div class="seek-bar rounded bg-light hover-bg flex-box align-i-c pointer">
+                        <div class="indicator rounded flex-box align-i-c">
+                        </div>
+                        <div class="seeker hide-mob  rounded"></div>
+                    </div>
+                    <span id="total-time" class="font-s hide-mob  flex-box justify-c align-i-c">--:--</span>
+                </div>
+
+            </div>
+            <div class="right-part hide-mob overflow-h flex-box align-i-c gap-10 m-10 p-10">
+                <img class="song-detail-btn" src="assets/songinfo.svg" alt="song-info">
+                <div class="sound m-5 flex-box">
+                    <img id="mute" class="img hidden" src="assets/mute.svg" alt="mute">
+                    <img class="img" id="unmute" src="assets/volume.svg" alt="vol">
+                </div>
+                <div class="volume-bar flex-box align-i-c hover-bg bg-light rounded pointer">
+                    <div class="vol-indicator flex-box align-i-c rounded"></div>
+                    <div class="vol-seeker rounded"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"
+        referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
